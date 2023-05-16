@@ -13,7 +13,6 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 
@@ -35,8 +34,11 @@ fun MyCard() {
                 .padding(16.dp)
                 .size(48.dp)
         )
-        Text(text = "This is a card", modifier = Modifier.padding(16.dp)
-        , color = Color.Black, fontStyle = Typography.titleLarge.fontStyle
+        Text(
+            text = "This is a card",
+            modifier = Modifier.padding(16.dp),
+            color = Color.Black,
+            fontStyle = Typography.titleLarge.fontStyle
         )
     }
 }

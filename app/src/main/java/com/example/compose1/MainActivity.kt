@@ -5,7 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.material3.Surface
 import com.example.compose1.ui.theme.Compose1Theme
-import com.example.compose1.ui.theme.MyCard
+import com.example.compose1.ui.theme.TextField
 
 
 class MainActivity : ComponentActivity() {
@@ -14,8 +14,10 @@ class MainActivity : ComponentActivity() {
         setContent {
             Compose1Theme {
                 // A surface container using the 'background' color from the theme
-                Surface{
-                    MyCard()
+                Surface {
+                    // MyCard()
+                    TextField()
+
                 }
             }
         }
